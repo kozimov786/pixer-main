@@ -12,16 +12,34 @@
 </head>
 <body>
     <header class="site-header">
-            <nav class="sitenav">
+                <div class="site-header__container container">
                 <a href="" class="nav-logo-link">
                     <img class="logo" src="img/logo.png" alt="logo" width="58" height="20">
                 </a>
-               <ul class="nav-list">
+                <nav class="sitenav">
+                 <ul class="nav-list">
                     <li class="nav-item">
-                       <a class="nav-link current" href="#">Bosh sahifa</a>
+                       <a class="nav-link nav-link__active" href="#">Bosh sahifa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Xizmatlar</a>
+                        <ul class="dropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">Vebsayt</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">Telegram bot</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">SMM</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">Grafik dizayn</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">CRM tizim</a>
+                            </li>
+                        </ul>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#">Portfolio</a>
@@ -35,28 +53,25 @@
                      <li class="nav-item">
                         <a class="nav-link contacts" href="#">Kontaktlar</a>
                      </li>
-                     <li class="nav-item">
-                        <a class="nav-link number-btn"  href="tel:+998996014747">+998996014747</a>
-                     </li>
                </ul>
-            </nav>
-         <div class="container">
-            <div class="next-level">
-                <div class="next-level__info">
-                        <h2 class="next-level__title">Biznesingizni keyingi bosqichga
-                            olib chiqing</h2>
-                        <p class="next-level__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
-                        <a class="next-level__link" href="#">Xizmatlar bilan tanishish</a>
-                </div>
-                <div class="next-level__video">
-                    <iframe class="youtube-link" width="458" height="258" src="https://www.youtube.com/embed/uvBppVw38c8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+             </nav>
+             <a class="number-btn"  href="tel:+998996014747">+998996014747</a>
             </div>
-        </div>
-    </header>
+        </header>
 
 
     <main>
+        <div class="next-level container">
+            <div class="next-level__info">
+                    <h2 class="next-level__title">Biznesingizni keyingi bosqichga
+                        olib chiqing</h2>
+                    <p class="next-level__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+                    <a class="next-level__link" href="#">Xizmatlar bilan tanishish</a>
+            </div>
+            <div class="next-level__video">
+                <iframe class="youtube-link" width="458" height="258" src="https://www.youtube.com/embed/uvBppVw38c8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
         <section class="services">
          <div class="services-info">
             <h2 class="services-title">Xizmatlar</h2>
@@ -65,36 +80,31 @@
         <ul class="services-list">
             <li class="services-item">
                 <a class="services-link" href="#">
-                    <img class="services-item__img" src="img/Screenshot_3.png" alt="create website" width="202" height="130">
-                    <h2 class="services-item__title">Websayt tuzish</h2>
+                    <h2 class="services-item__title services-vebsayt">Websayt tuzish</h2>
                     <p class="services-item__text">Lorem ipsum</p>
                 </a>
             </li>
             <li class="services-item">
                 <a class="services-link" href="#">
-                    <img class="services-item__img" src="img/Screenshot_4.png" alt="Telegram bot" width="202" height="130">
-                    <h2 class="services-item__title">Telegram bot</h2>
+                    <h2 class="services-item__title services-telegram">Telegram bot</h2>
                     <p class="services-item__text">lorem ipsum</p>
                 </a>
             </li>
             <li class="services-item">
                 <a class="services-link" href="#">
-                    <img class="services-item__img" src="img/Screenshot_5.png" alt="SMM courses" width="222" height="130">
-                    <h2 class="services-item__title">SMM</h2>
+                    <h2 class="services-item__title services-smm">SMM</h2>
                     <p class="services-item__text">Lorem, ipsum</p>
                 </a>
             </li>
             <li class="services-item">
                 <a class="services-link" href="#">
-                    <img class="services-item__img" src="img/Screenshot_6.png" alt="Grafic design" width="176" height="130">
-                    <h2 class="services-item__title">Grafik dizayn</h2>
+                    <h2 class="services-item__title services-grafik">Grafik dizayn</h2>
                     <p class="services-item__text">lorem ipsum</p>
                 </a>
             </li>
             <li class="services-item">
                 <a class="services-link" href="#">
-                    <img class="services-item__img" src="img/Screenshot_7.png" alt="CRM systems" width="178" height="130">
-                    <h2 class="services-item__title">CRM tizimlar</h2>
+                    <h2 class="services-item__title services-crm">CRM tizimlar</h2>
                     <p class="services-item__text">lorem ipsum</p>
                 </a>
             </li>
@@ -114,13 +124,13 @@
         <div class="about-work-prog">
             <img src="img/Screenshot_8.png" alt="Note" width="191" height="241">
             <div class="work-info">
-                <h2>Talablarni aniqlab chiqamiz</h2>
+                <h3>Talablarni aniqlab chiqamiz</h3>
                 <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
             </div>
         </div>
         <div class="about-work-prog">
             <div class="work-info">
-                <h2>Bir necha yechimlarni taklif qilamiz</h2>
+                <h3>Bir necha yechimlarni taklif qilamiz</h3>
                 <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
             </div>
             <img src="img/Screenshot_9.png" alt="Solve problem" width="300" height="224">
@@ -128,13 +138,13 @@
         <div class="about-work-prog">
             <img src="img/Screenshot_10.png" alt="work on the laptop" width="300" height="258">
             <div class="work-info">
-                <h2>Loyiha uchun vaqt belgilaymiz</h2>
+                <h3>Loyiha uchun vaqt belgilaymiz</h3>
                 <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
             </div>
         </div>
         <div class="about-work-prog">
             <div class="work-info">
-                <h2>A’lo sifat bilan bajarib topshiramiz</h2>
+                <h3>A’lo sifat bilan bajarib topshiramiz</h3>
                 <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
             </div>
             <img src="img/Screenshot_11.png" alt="Congratulate winning" width="300" height="161">
@@ -142,7 +152,7 @@
         <div class="about-work-prog">
             <img src="img/Screenshot_12.png" alt="Help" width="300" height="232">
             <div class="work-info">
-                <h2>Qo’llab-quvvatlab boramiz</h2>
+                <h3>Qo’llab-quvvatlab boramiz</h3>
                 <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis</p>
             </div>
         </div>
