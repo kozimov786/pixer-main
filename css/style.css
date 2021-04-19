@@ -14,6 +14,7 @@ body{
     font-size: 16px;
     line-height: 24px;
     color: #000;
+    scroll-behavior: smooth;
 }
 .container{
     max-width: 1300px;
@@ -282,7 +283,7 @@ body{
 
 .about-work{
     text-align: center;
-    margin-bottom: 50px;
+    padding-bottom: 56px;
 }
 .about-work-info{
     width: 850px;
@@ -295,12 +296,14 @@ body{
     align-items: center;
 }
 .about-work-info__title{
+    margin-top: 0;
    margin-bottom: 16px;
    font-weight: bold;
    font-size: 24px;
    line-height: 130%;
 }
 .about-work-info__text{
+    margin-top: 0;
     margin-bottom: 24px;
 }
 .work-info{
@@ -310,48 +313,66 @@ body{
 .about-work-prog:nth-child(even){
     flex-direction: row-reverse;
 }
-.about-work-prog::before{
+.work-info__title{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.work-info__text{
+    margin: 0;
+}
+.about-work-prog::after{
     content: "";
     display: block;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
 }
-.about-work-prog__support::before{
+.about-work-prog__support::after{
     background-image: url("../img/support.png");
     width: 300px;
     height: 232px;
 }
-.about-work-prog__quality::before{
+.about-work-prog__quality::after{
     background-image: url("../img/quality.png");
     width: 300px;
     height: 161px;
 }
-.about-work-prog__deadline::before{
+.about-work-prog__deadline::after{
     background-image: url("../img/deadline.png");
     width: 300px;
     height: 258px;
 }
-.about-work-prog__solution::before{
+.about-work-prog__solution::after{
     background-image: url("../img/solution.png");
     width: 300px;
     height: 224px;
 }
-.about-work-prog__demand::before{
+.about-work-prog__demand::after{
     background-image: url("../img/demand.png");
-    width: 191px;
+    width: 301px;
     height: 242px;
 }
-
-.order-section{
+.about-work-link{
+    display: inline-block; 
+    margin-top: 48px;
+}
+/* ORDER SECTION */
+#order-section{
     background-color: #00BAFC;
-    padding: 56px 290px 64px 290px;
+    padding: 56px 0 64px 0;
 }
 .order-info{
     text-align: center;
     padding:0 70px;
     color: #fff;
     margin-bottom: 24px;
+}
+.order-info__title{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.order-info__text{
+    margin: 0;
 }
 form{
     display: flex;
@@ -392,10 +413,19 @@ select {
     background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-16.png") #F3F3F3 no-repeat 98.5% !important ; /* !important used for overriding all other customisations */
     background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-16.png") #F3F3F3 no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
 }
-
+/* FOOTER */
+.site-footer{
+    background-color: black;
+}
+.footer-copy-title{
+    margin: 0;
+   margin-bottom: 16px;
+}
+.footer-copy-text{
+    margin: 0;
+}
 .footer-wrapper{
     display: flex;
-    background-color: black;
     color: #fff;
     padding: 56px;
 }
@@ -428,7 +458,26 @@ select {
     font-size: 20px;
     line-height: 130%;
     color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
-i{
-    margin-right: 10px;
+.footer-network__item::before{
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+}
+.footer-network__item-telegram::before{
+    background-image: url("../img/telegram.png");
+    margin-right: 8px;
+}
+.footer-network__item-facebook::before{
+    background-image: url("../img/facebook.png");
+    margin-right: 8px;
+}
+.footer-network__item-instagram::before{
+    background-image: url("../img/instagram.png");
+    margin-right: 8px;
 }

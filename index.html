@@ -22,7 +22,7 @@
                        <a class="nav-link nav-link__active" href="#">Bosh sahifa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Xizmatlar</a>
+                        <a class="nav-link" href="#services">Xizmatlar</a>
                         <ul class="dropdown">
                             <li class="dropdown-item">
                                 <a class="dropdown-link" href="#">Vebsayt</a>
@@ -66,13 +66,13 @@
                     <h2 class="next-level__title">Biznesingizni keyingi bosqichga
                         olib chiqing</h2>
                     <p class="next-level__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
-                    <a class="next-level__link" href="#">Xizmatlar bilan tanishish</a>
+                    <a class="next-level__link" href="#services">Xizmatlar bilan tanishish</a>
             </div>
             <div class="next-level__video">
                 <iframe class="youtube-link" width="458" height="258" src="https://www.youtube.com/embed/uvBppVw38c8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <section class="services">
+        <section id="services">
          <div class="services-info">
             <h2 class="services-title">Xizmatlar</h2>
             <p class="services-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
@@ -110,8 +110,8 @@
             </li>
         </ul>
         <div class="order-links-wrapper">
-            <a class="link-order btn" href="#">Buyurtma berish</a>
-            <a class="link-back-services" href="#">Xizmatlar sahifasiga o’tish</a>
+            <a class="link-order btn" href="#order-section">Buyurtma berish</a>
+            <a class="link-back-services" href="#services">Xizmatlar sahifasiga o’tish</a>
         </div>
     </section>
 
@@ -152,31 +152,33 @@
             </div>
         </div>
 
-        <a class="about-work-link btn" href="#">Buyurtma berish</a>
+        <a class="about-work-link btn" href="#order-section">Buyurtma berish</a>
 
     </section>
 
 
 
-    <section class="order-section container">
+    <section id="order-section">
+        <div class="order-wrapper container">
         <div class="order-info">
-           <h2>Buyurtma berish</h2>
-           <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+           <h2 class="order-info__title">Buyurtma berish</h2>
+           <p class="order-info__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
         </div>
         <div class="form-wrapper">
-        <form class="order-form" action="#">
-              <input type="text" placeholder="Ismingiz" required>
-              <input type="tel" placeholder="Telefon raqamingiz" required> 
+        <form class="order-form" action="POST">
+              <input type="text" placeholder="Ismingiz" name="name" required>
+              <input type="tel" placeholder="Telefon raqamingiz" name="phone-number" required> 
               <select  name="form-select" id="form-field">
-                  <option  value="0">Xizmat turlari</option>
+                  <option  value="" selected disabled>Xizmat turlari</option>
                   <option value="Websayt">Websayt</option>
                   <option value="SMM">SMM</option>
                   <option value="Grafik">Grafik</option>
               </select>
               <a class="form-btn btn" href="#">Buyurtma berish</a>
         </form>
-    </div>
-    </section>
+      </div>
+   </div>
+</section>
 
 
     </main>
@@ -199,10 +201,18 @@
                  <li><a class="footer-link" href="#">Kontaktlar</a></li>
              </ul>
              <ul class="footer-network">
-                 <li><h2  class="footer-network__title">Biz internetda</h2></li>
-                 <li><a class="footer-network__link" href="#"> <i class="fab fa-telegram"></i> Telegram</a></li>
-                 <li><a class="footer-network__link" href="#"> <i class="fab fa-facebook"></i>Facebook</a></li>
-                 <li><a class="footer-network__link" href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                 <li>
+                     <h2  class="footer-network__title">Biz internetda</h2>
+                    </li>
+                 <li class="footer-network__item footer-network__item-telegram">
+                     <a class="footer-network__link" href="#">Telegram</a>
+                    </li>
+                 <li class="footer-network__item footer-network__item-facebook">
+                     <a class="footer-network__link" href="#">Facebook</a>
+                    </li>
+                 <li class="footer-network__item footer-network__item-instagram">
+                     <a class="footer-network__link" href="#">Instagram</a>
+                    </li>
              </ul>  
          </div>
     </footer>
