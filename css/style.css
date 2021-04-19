@@ -294,19 +294,55 @@ body{
     display: flex;
     align-items: center;
 }
-.about-work-info h2{
+.about-work-info__title{
    margin-bottom: 16px;
    font-weight: bold;
    font-size: 24px;
    line-height: 130%;
 }
-.about-work-info p{
+.about-work-info__text{
     margin-bottom: 24px;
 }
 .work-info{
-    margin-left: 35px;
-    text-align: left;
+    width: 493px;
+    text-align: start;
 }
+.about-work-prog:nth-child(even){
+    flex-direction: row-reverse;
+}
+.about-work-prog::before{
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.about-work-prog__support::before{
+    background-image: url("../img/support.png");
+    width: 300px;
+    height: 232px;
+}
+.about-work-prog__quality::before{
+    background-image: url("../img/quality.png");
+    width: 300px;
+    height: 161px;
+}
+.about-work-prog__deadline::before{
+    background-image: url("../img/deadline.png");
+    width: 300px;
+    height: 258px;
+}
+.about-work-prog__solution::before{
+    background-image: url("../img/solution.png");
+    width: 300px;
+    height: 224px;
+}
+.about-work-prog__demand::before{
+    background-image: url("../img/demand.png");
+    width: 191px;
+    height: 242px;
+}
+
 .order-section{
     background-color: #00BAFC;
     padding: 56px 290px 64px 290px;
